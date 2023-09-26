@@ -1,0 +1,54 @@
+body{
+  background-color:rgba(237, 237, 197, 0.709);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image : url(https://i.stack.imgur.com/9TQsy.png);
+}
+.container{
+  display:flex;
+  width:75%;
+  margin: 10px auto;
+  border:solid red 1px;
+  box-shadow: 5px 5px 1px red;
+  /* min-height:2000px; */
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:50px;
+  padding-bottom:50px;
+  height:2000px;
+}
+
+.introduction-article{
+  position:relative;
+  top:-20px;
+  width:500px;
+  /* background-image: repeating-linear-gradient(-45deg, rgba(128, 118, 118, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px); */
+  /* text-align:center; */
+}
+
+/* All Animations */
+.fade-in-animation{
+  animation-name: intro;
+  animation-duration:5s;
+}
+@keyframes intro{
+  from{
+      opacity:0;
+  }
+  to{
+      opacity:100;
+  }
+}
+
+.make-bigger-animation{
+  animation-name: make-bigger;
+  animation-duration:0.5s;
+}
+@keyframes make-bigger{
+  from{
+      transform:scale(90%);
+  }
+  to{
+      transform:scale(100%);
+  }
+}
+

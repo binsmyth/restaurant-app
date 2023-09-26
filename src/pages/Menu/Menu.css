@@ -1,0 +1,44 @@
+.menu{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.menu .image img{
+    width:200px;
+    height:200px;
+    padding-top:20px;
+    border:solid 1px coral;
+}
+.menu h2{
+    overflow:hidden;
+    color:rgb(85, 30, 2);
+}
+.menu .menu-card{
+    padding-left:50px;
+    padding-right:50px;
+    border:solid #bf9494b3 1px;
+    width:400px;
+    background-image:linear-gradient(to right, rgb(231, 164, 40),coral);
+    background-color: coral;
+    box-shadow:5px 5px;
+}
+.menu-center{
+    text-align:center;
+}
+.plate img{
+    width:200px;
+}
+.menu .menu-card ul{
+    display:grid;
+    grid-template-columns: 80% 20%;
+}
+.menu .menu-card ul li {
+    list-style-type: none;
+    letter-spacing: 0.2em;
+    text-align:left;
+    margin-top:10px;
+    color:rgb(85, 30, 2);
+}
+.menu .menu-card ul li:nth-child(even){
+    color:rgba(66, 21, 11, 0.405);
+}
