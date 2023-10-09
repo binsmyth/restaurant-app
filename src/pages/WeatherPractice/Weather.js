@@ -4,8 +4,14 @@ const Weather = () =>{
     const [temperature, setTemperature] = useState();
     const getTemperature = () =>{
         fetch('https://api.open-meteo.com/v1/forecast?latitude=-37.814&longitude=144.9633&hourly=temperature_2m')
-            .then((response)=>response.json())
-            .then((result)=>setTemperature(result))
+            .then((response)=>{
+                console.log(response);
+                return response.json();
+            })
+            .then((result)=>{
+                console.log(result);
+                setTemperature(result);
+            })
     }
     const makeHourlyTemperature = (temp)=>{
         let tempString = "";
