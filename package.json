@@ -1,5 +1,6 @@
 {
   "name": "newapp",
+  "homepage":"https://binsmyth.github.io/restaurant-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
